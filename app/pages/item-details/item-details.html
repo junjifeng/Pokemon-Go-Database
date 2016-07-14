@@ -9,9 +9,15 @@
 
 <ion-content>
  <div *ngIf="selectedItem" class="selection">
-    <b>{{selectedItem.title}}</b>
-    <div>
-      You navigated here from <b>{{selectedItemn.title}}</b>
+    <b>{{selectedItem.name}}</b>
+
+    <div *ngIf="selectedItem.types" *ngFor="let type of selectedItem.types">
+      {{type}}
     </div>
+
+    <div *ngIf="selectedItem.types" *ngFor="let type of selectedItem.types">
+      {{type}}
+    </div>
+
   </div>
 </ion-content>

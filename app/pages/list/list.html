@@ -3,18 +3,17 @@
     <button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>My First List</ion-title>
+    <ion-title>Pokemon</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
   <ion-list>
-    <button ion-item *ngFor="let pokemon of pokemons" (click)="itemTapped($event, item)">
+    <button ion-item *ngFor="let pokemon of pokemons" (click)="itemTapped($event, pokemon)">
       {{pokemon.name}}
-      {{pokemon.type}}
     </button>
   </ion-list>
   <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
+    You navigated here from <b>{{selectedItem.name}}</b>
   </div>
 </ion-content>
