@@ -15,8 +15,20 @@
       {{type}}
     </div>
 
-    <div *ngIf="selectedItem.types" *ngFor="let type of selectedItem.types">
-      {{type}}
+    <div *ngIf="selectedItem.evolCandy">
+      {{selectedItem.evolCandy}}
+    </div>
+
+    <div *ngIf="selectedItem.eggKm">
+      {{selectedItem.eggKm}}
+    </div>
+
+    <div *ngIf="selectedItem.fastAttacks" *ngFor="let fastAttack of selectedItem.fastAttacks">
+      {{fastAttack}}
+    </div>
+    
+    <div *ngIf="selectedItem.specialAttacks" *ngFor="let specialAttack of selectedItem.specialAttacks">
+      {{specialAttack}}
     </div>
 
   </div>
