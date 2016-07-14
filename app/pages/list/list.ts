@@ -17,7 +17,7 @@ export class ListPage {
 
     this.pokemons = [
       {name: 'Bulbasaur', types: ['Grass', 'Poison'], evolCandy: 25, eggKm: 2,  fastAttacks: ['Tackle', 'Vine Whip'], specialAttacks: ['Sludge Bomb', 'Seed Bomb', 'Power Whip']},
-      {name: 'Ivysaur', types: [''], evolCandy: 0, eggKm: 2, fastAttacks: [''], specialAttacks: ['']},
+      {name: 'Ivysaur', types: ['Grass', 'Poison'], evolCandy: 100, eggKm: null, fastAttacks: [''], specialAttacks: ['']},
       {name: 'Venusaur', types: [''], evolCandy: 0, eggKm: 2, fastAttacks: [''], specialAttacks: ['']},
       {name: 'Charmander', types: [''], evolCandy: 0, eggKm: 2, fastAttacks: [''], specialAttacks: ['']},
       {name: 'Charmeleon', types: [''], evolCandy: 0, eggKm: 2, fastAttacks: [''], specialAttacks: ['']},

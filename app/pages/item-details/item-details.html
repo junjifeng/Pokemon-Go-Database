@@ -18,17 +18,29 @@
     <div *ngIf="selectedItem.evolCandy">
       {{selectedItem.evolCandy}}
     </div>
+    <div *ngIf="selectedItem.evolCandy === null">
+      This Pokemon cannot be evolved.
+    </div>
 
     <div *ngIf="selectedItem.eggKm">
       {{selectedItem.eggKm}}
+    </div>
+    <div *ngIf="selectedItem.eggKm === null">
+      This Pokemon cannot be hatched from an egg.
     </div>
 
     <div *ngIf="selectedItem.fastAttacks" *ngFor="let fastAttack of selectedItem.fastAttacks">
       {{fastAttack}}
     </div>
+    <div *ngIf="selectedItem.fastAttacks === null">
+      This Pokemon has no fast attacks.
+    </div>
     
     <div *ngIf="selectedItem.specialAttacks" *ngFor="let specialAttack of selectedItem.specialAttacks">
       {{specialAttack}}
+    </div>
+    <div *ngIf="selectedItem.specialAttacks === null">
+      This pokemon has no special attacks.
     </div>
 
   </div>
