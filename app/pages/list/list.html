@@ -11,6 +11,7 @@
   <ion-list>
     <button ion-item *ngFor="let pokemon of pokemons" (click)="itemTapped($event, item)">
       {{pokemon.name}}
+      {{pokemon.type}}
     </button>
   </ion-list>
   <div *ngIf="selectedItem" padding>
