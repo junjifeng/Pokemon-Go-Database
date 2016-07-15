@@ -11,36 +11,25 @@
  <div *ngIf="selectedItem" class="selection">
     <b>{{selectedItem.name}}</b>
 
+    <h1>Type:</h1>
     <div *ngIf="selectedItem.types" *ngFor="let type of selectedItem.types">
       {{type}}
     </div>
 
+    <h1>Evolution:</h1>
     <div *ngIf="selectedItem.evolCandy">
-      {{selectedItem.evolCandy}}
+      This Pokemon can be evolved with {{selectedItem.evolCandy}} candies.
     </div>
     <div *ngIf="selectedItem.evolCandy === null">
       This Pokemon cannot be evolved.
     </div>
 
+    <h1>Eggs:</h1>
     <div *ngIf="selectedItem.eggKm">
-      {{selectedItem.eggKm}}
+      This Pokemon can be hatched with a {{selectedItem.eggKm}}km egg.
     </div>
     <div *ngIf="selectedItem.eggKm === null">
       This Pokemon cannot be hatched from an egg.
-    </div>
-
-    <div *ngIf="selectedItem.fastAttacks" *ngFor="let fastAttack of selectedItem.fastAttacks">
-      {{fastAttack}}
-    </div>
-    <div *ngIf="selectedItem.fastAttacks === null">
-      This Pokemon has no fast attacks.
-    </div>
-    
-    <div *ngIf="selectedItem.specialAttacks" *ngFor="let specialAttack of selectedItem.specialAttacks">
-      {{specialAttack}}
-    </div>
-    <div *ngIf="selectedItem.specialAttacks === null">
-      This pokemon has no special attacks.
     </div>
 
   </div>
