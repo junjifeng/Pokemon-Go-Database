@@ -10,6 +10,9 @@
 <ion-content>
   <ion-list>
     <button ion-item *ngFor="let pokemon of pokemons" (click)="itemTapped($event, pokemon)">
+      <ion-thumbnail item-left>
+        <img src="pokemon/{{pokemon.name}}.png">
+      </ion-thumbnail>
       {{pokemon.name}}
     </button>
   </ion-list>
