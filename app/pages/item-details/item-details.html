@@ -18,7 +18,7 @@
 
     <h1>Evolution:</h1>
     <div *ngIf="selectedItem.evolCandy">
-      This Pokemon can be evolved with {{selectedItem.evolCandy}} candies.
+      This Pokemon can be evolved into {{selectedItem.evolTo}} with {{selectedItem.evolCandy}} candies.
     </div>
     <div *ngIf="selectedItem.evolCandy === null">
       This Pokemon cannot be evolved.
