@@ -9,7 +9,9 @@
 
 <ion-content>
  <div *ngIf="selectedItem" class="selection">
-    <b>{{selectedItem.name}}</b>
+    <div>{{selectedItem.name}}</div>
+
+    <img src="pokemon/{{selectedItem.name}}.png" alt="{{selectedItem.name}}">
 
     <h1>Type:</h1>
     <div *ngIf="selectedItem.types" *ngFor="let type of selectedItem.types">
@@ -21,7 +23,15 @@
       This Pokemon can be evolved into {{selectedItem.evolTo}} with {{selectedItem.evolCandy}} candies.
     </div>
     <div *ngIf="selectedItem.evolCandy === null">
-      This Pokemon cannot be evolved.
+      This Pokemon cannot be evolved into another Pokemon.
+    </div>
+
+    <div *ngIf="selectedItem.evolFrom">
+      This Pokemon can be evolved from {{selectedItem.evolFrom}}.
+    </div>
+    <br>
+    <div *ngIf="selectedItem.evolFrom === null">
+      You cannot get this Pokemon by evolving another Pokemon.
     </div>
 
     <h1>Eggs:</h1>
