@@ -2,6 +2,47 @@ div.selection {
   font-size: 22px;
   display: block;
   text-align: center;
-  padding-top: 5%;
 }
+
+#title {
+  margin-top: 5%;
+}
+
+.rarityBanner {
+  height: 75px;
+  line-height: 75px;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+#veryCommon {
+  background-color: lightgreen;
+}
+#common {
+  background-color: green;
+}
+#uncommon {
+  background-color: darkgreen;
+}
+#rare {
+  background-color: yellow;
+}
+#veryRare {
+  background-color: orange;
+}
+#ultraRare {
+  background-color: red;
+}
+#special {
+  background-color: blue;
+}
+#legendary {
+  background-color: purple;
+}
+#mythical {
+  background-color: black;
+}
+
+
 
