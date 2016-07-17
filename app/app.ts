@@ -2,6 +2,7 @@ import {Component, ViewChild} from '@angular/core';
 import {ionicBootstrap, Platform, MenuController, Nav} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {ListPage} from './pages/list/list';
+import {RarityChart} from './pages/rarity-chart/rarity-chart';
 
 
 @Component({
@@ -22,7 +23,8 @@ class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Pokemon', component: ListPage }
+      { title: 'Pokemon', component: ListPage },
+      { title: 'Rarity Chart', component: RarityChart}
     ];
   }
 

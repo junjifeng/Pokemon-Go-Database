@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <button menuToggle *ngIf="!selectedItem">
+    <button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Item Details</ion-title>
@@ -23,11 +23,6 @@
     <div id="title" >{{selectedItem.name}}</div>
 
     <img src="pokemon/{{selectedItem.name}}.png" alt="{{selectedItem.name}}">
-
-    <h1>Type:</h1>
-    <div *ngIf="selectedItem.types" *ngFor="let type of selectedItem.types">
-      {{type}}
-    </div>
 
     <h1>Evolution:</h1>
     <div *ngIf="selectedItem.evolCandy">
