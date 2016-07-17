@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {NavController, NavParams} from 'ionic-angular';
+import {RarityChart} from '../rarity-chart/rarity-chart';
 
 @Component({
   templateUrl: 'build/pages/item-details/item-details.html'
@@ -26,5 +27,9 @@ export class ItemDetailsPage {
     this.veryRareMin = 0.09;
     this.ultraRareMin = 0.04;
     this.specialMin = 0.02;
+  }
+
+  itemTapped(event) {
+    this.nav.push(RarityChart);
   }
 }
