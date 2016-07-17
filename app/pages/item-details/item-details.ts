@@ -9,10 +9,10 @@ export class ItemDetailsPage {
 
   veryCommonMin: number;
   commonMin: number;
+  uncommonMin: number;
   rareMin: number;
   veryRareMin: number;
   ultraRareMin: number;
-  epicMin: number;
   specialMin: number;
 
 
@@ -21,10 +21,10 @@ export class ItemDetailsPage {
     this.selectedItem = navParams.get('pokemon');
     this.veryCommonMin = 1.96;
     this.commonMin = 0.97;
-    this.rareMin = 0.47;
-    this.veryRareMin = 0.22;
-    this.ultraRareMin = 0.09;
-    this.epicMin = 0.04;
+    this.uncommonMin = 0.47;
+    this.rareMin = 0.22;
+    this.veryRareMin = 0.09;
+    this.ultraRareMin = 0.04;
     this.specialMin = 0.02;
   }
 }
