@@ -20,33 +20,34 @@
     <div class="rarityBanner" id="legendary" *ngIf="selectedItem.rarity >= 0.001 && selectedItem.rarity < specialMin" (click)="itemTapped($event)">LEGENDARY</div>
     <div class="rarityBanner" id="mythical" *ngIf="selectedItem.rarity === null" (click)="itemTapped($event)">MYTHICAL</div>
 
-    <div id="title" >{{selectedItem.name}}</div>
+    <div id="textContainer">
+      <div id="title" >{{selectedItem.name}}</div>
 
-    <img src="pokemon/{{selectedItem.name}}.png" alt="{{selectedItem.name}}">
+      <img src="pokemon/{{selectedItem.name}}.png" alt="{{selectedItem.name}}">
 
-    <h1>Evolution:</h1>
-    <div *ngIf="selectedItem.evolCandy">
-      This Pokemon can be evolved into {{selectedItem.evolTo}} with {{selectedItem.evolCandy}} candies.
-    </div>
-    <div *ngIf="selectedItem.evolCandy === null">
-      This Pokemon cannot be evolved into another Pokemon.
-    </div>
+      <h1>Evolution:</h1>
+      <div *ngIf="selectedItem.evolCandy">
+        This Pokemon can be evolved into {{selectedItem.evolTo}} with {{selectedItem.evolCandy}} candies.
+      </div>
+      <div *ngIf="selectedItem.evolCandy === null">
+        This Pokemon cannot be evolved into another Pokemon.
+      </div>
 
-    <div *ngIf="selectedItem.evolFrom">
-      This Pokemon can be evolved from {{selectedItem.evolFrom}}.
-    </div>
-    <br>
-    <div *ngIf="selectedItem.evolFrom === null">
-      You cannot get this Pokemon by evolving another Pokemon.
-    </div>
+      <div *ngIf="selectedItem.evolFrom">
+        This Pokemon can be evolved from {{selectedItem.evolFrom}}.
+      </div>
+      <br>
+      <div *ngIf="selectedItem.evolFrom === null">
+        You cannot get this Pokemon by evolving another Pokemon.
+      </div>
 
-    <h1>Eggs:</h1>
-    <div *ngIf="selectedItem.eggKm">
-      This Pokemon can be hatched with a {{selectedItem.eggKm}}km egg.
+      <h1>Eggs:</h1>
+      <div *ngIf="selectedItem.eggKm">
+        This Pokemon can be hatched with a {{selectedItem.eggKm}}km egg.
+      </div>
+      <div *ngIf="selectedItem.eggKm === null">
+        This Pokemon cannot be hatched from an egg.
+      </div>
     </div>
-    <div *ngIf="selectedItem.eggKm === null">
-      This Pokemon cannot be hatched from an egg.
-    </div>
-
   </div>
 </ion-content>

@@ -8,15 +8,25 @@ div.selection {
   margin-top: 5%;
 }
 
+#textContainer {
+  padding: 0px 20px 20px;
+}
+
 .rarityBanner {
   height: 75px;
-  line-height: 75px;
   width: 100%;
   color: white;
   text-align: center;
   font-size: 30px;
+  display:flex;
+  justify-content: center; //horizontal centering
+  align-items:center; //vertical centering
   -webkit-text-stroke-width: .3px;
   -webkit-text-stroke-color: black;
+}
+
+.rarityBanner.chart {
+  height: 11.11%;
 }
 
 #veryCommon {
