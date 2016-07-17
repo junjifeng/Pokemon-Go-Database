@@ -9,6 +9,16 @@
 
 <ion-content>
  <div *ngIf="selectedItem" class="selection">
+    <div class="veryCommon" *ngIf="selectedItem.rarity >= veryCommonMin">VERY COMMON</div>
+    <div *ngIf="selectedItem.rarity >= commonMin && selectedItem.rarity < veryCommonMin">COMMON</div>
+    <div *ngIf="selectedItem.rarity >= rareMin && selectedItem.rarity < commonMin">UNCOMMON</div>
+    <div *ngIf="selectedItem.rarity >= veryRareMin && selectedItem.rarity < rareMin">RARE</div>
+    <div *ngIf="selectedItem.rarity >= ultraRareMin && selectedItem.rarity < veryRareMin">VERY RARE</div>
+    <div *ngIf="selectedItem.rarity >= epicMin && selectedItem.rarity < ultraRareMin">ULTRA RARE</div>
+    <div *ngIf="selectedItem.rarity >= specialMin && selectedItem.rarity < epicMin">SPECIAL</div>
+    <div *ngIf="selectedItem.rarity < specialMin">LEGENDARY</div>
+
+
     <div>{{selectedItem.name}}</div>
 
     <img src="pokemon/{{selectedItem.name}}.png" alt="{{selectedItem.name}}">
