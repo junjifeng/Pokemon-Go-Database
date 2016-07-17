@@ -9,6 +9,7 @@
 
 <ion-content>
  <div *ngIf="selectedItem" class="selection">
+
     <div class="rarityBanner" id="veryCommon" *ngIf="selectedItem.rarity >= veryCommonMin">VERY COMMON</div>
     <div class="rarityBanner" id="common" *ngIf="selectedItem.rarity >= commonMin && selectedItem.rarity < veryCommonMin">COMMON</div>
     <div class="rarityBanner" id="uncommon" *ngIf="selectedItem.rarity >= uncommonMin && selectedItem.rarity < commonMin">UNCOMMON</div>
@@ -18,8 +19,6 @@
     <div class="rarityBanner" id="special" *ngIf="selectedItem.rarity >= specialMin && selectedItem.rarity < ultraRareMin">SPECIAL</div>
     <div class="rarityBanner" id="legendary" *ngIf="selectedItem.rarity >= 0.001 && selectedItem.rarity < specialMin">LEGENDARY</div>
     <div class="rarityBanner" id="mythical" *ngIf="selectedItem.rarity === null">MYTHICAL</div>
-    
-
 
     <div id="title" >{{selectedItem.name}}</div>
 
