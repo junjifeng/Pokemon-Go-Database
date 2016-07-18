@@ -26,27 +26,26 @@
       <img src="pokemon/{{selectedItem.name}}.png" alt="{{selectedItem.name}}">
 
       <h1>Evolution:</h1>
-      <div *ngIf="selectedItem.evolCandy">
-        This Pokemon can be evolved into {{selectedItem.evolTo}} with {{selectedItem.evolCandy}} candies.
+      <div class="evolTo" *ngIf="selectedItem.evolCandy">
+        This Pokémon can be evolved into {{selectedItem.evolTo}} with {{selectedItem.evolCandy}} candies.
       </div>
-      <div *ngIf="selectedItem.evolCandy === null">
-        This Pokemon cannot be evolved into another Pokemon.
+      <div class="evolTo" *ngIf="selectedItem.evolCandy === null">
+        This Pokémon cannot be evolved into another Pokémon.
       </div>
 
-      <div *ngIf="selectedItem.evolFrom">
-        This Pokemon can be evolved from {{selectedItem.evolFrom}}.
+      <div class="evolFrom" *ngIf="selectedItem.evolFrom">
+        This Pokémon can be evolved from {{selectedItem.evolFrom}}.
       </div>
-      <br>
-      <div *ngIf="selectedItem.evolFrom === null">
-        You cannot get this Pokemon by evolving another Pokemon.
+      <div class="evolFrom" *ngIf="selectedItem.evolFrom === null">
+        You cannot get this Pokémon by evolving another Pokémon.
       </div>
 
       <h1>Eggs:</h1>
-      <div *ngIf="selectedItem.eggKm">
-        This Pokemon can be hatched with a {{selectedItem.eggKm}}km egg.
+      <div class="eggKm" *ngIf="selectedItem.eggKm">
+        This Pokémon can be hatched with a {{selectedItem.eggKm}}km egg.
       </div>
-      <div *ngIf="selectedItem.eggKm === null">
-        This Pokemon cannot be hatched from an egg.
+      <div class="eggKm" *ngIf="selectedItem.eggKm === null">
+        This Pokémon cannot be hatched from an egg.
       </div>
     </div>
   </div>
