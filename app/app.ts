@@ -23,7 +23,7 @@ class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Pokemon', component: ListPage },
+      { title: 'Pokémon', component: ListPage },
       { title: 'Rarity Chart', component: RarityChart}
     ];
   }
