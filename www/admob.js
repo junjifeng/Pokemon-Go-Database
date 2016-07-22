@@ -1,8 +1,8 @@
 var admobid = {};
 
 admobid = { // for iOS
-banner: 'ca-app-pub-3940256099942544/2934735716',
-interstitial: 'ca-app-pub-3940256099942544/4411468910'
+    banner: 'ca-app-pub-3940256099942544/2934735716',
+    interstitial: 'ca-app-pub-3940256099942544/4411468910'
 };
 
 function initApp() {
