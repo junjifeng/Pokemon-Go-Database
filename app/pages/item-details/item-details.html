@@ -10,15 +10,15 @@
 <ion-content>
  <div *ngIf="selectedItem" class="selection">
 
-    <div class="rarityBanner" id="veryCommon" *ngIf="selectedItem.rarity >= veryCommonMin" (click)="itemTapped($event)">VERY COMMON</div>
-    <div class="rarityBanner" id="common" *ngIf="selectedItem.rarity >= commonMin && selectedItem.rarity < veryCommonMin" (click)="itemTapped($event)">COMMON</div>
-    <div class="rarityBanner" id="uncommon" *ngIf="selectedItem.rarity >= uncommonMin && selectedItem.rarity < commonMin" (click)="itemTapped($event)">UNCOMMON</div>
-    <div class="rarityBanner" id="rare" *ngIf="selectedItem.rarity >= rareMin && selectedItem.rarity < uncommonMin" (click)="itemTapped($event)">RARE</div>
-    <div class="rarityBanner" id="veryRare" *ngIf="selectedItem.rarity >= veryRareMin && selectedItem.rarity < rareMin" (click)="itemTapped($event)">VERY RARE</div>
-    <div class="rarityBanner" id="ultraRare" *ngIf="selectedItem.rarity >= ultraRareMin && selectedItem.rarity < veryRareMin" (click)="itemTapped($event)">ULTRA RARE</div>
-    <div class="rarityBanner" id="special" *ngIf="selectedItem.rarity >= specialMin && selectedItem.rarity < ultraRareMin" (click)="itemTapped($event)">SPECIAL</div>
-    <div class="rarityBanner" id="legendary" *ngIf="selectedItem.rarity >= 0.001 && selectedItem.rarity < specialMin" (click)="itemTapped($event)">LEGENDARY</div>
-    <div class="rarityBanner" id="mythical" *ngIf="selectedItem.rarity === null" (click)="itemTapped($event)">MYTHICAL</div>
+    <button class="rarityBanner" id="veryCommon" *ngIf="selectedItem.rarity >= veryCommonMin" (click)="itemTapped($event)">VERY COMMON</button>
+    <button class="rarityBanner" id="common" *ngIf="selectedItem.rarity >= commonMin && selectedItem.rarity < veryCommonMin" (click)="itemTapped($event)">COMMON</button>
+    <button class="rarityBanner" id="uncommon" *ngIf="selectedItem.rarity >= uncommonMin && selectedItem.rarity < commonMin" (click)="itemTapped($event)">UNCOMMON</button>
+    <button class="rarityBanner" id="rare" *ngIf="selectedItem.rarity >= rareMin && selectedItem.rarity < uncommonMin" (click)="itemTapped($event)">RARE</button>
+    <button class="rarityBanner" id="veryRare" *ngIf="selectedItem.rarity >= veryRareMin && selectedItem.rarity < rareMin" (click)="itemTapped($event)">VERY RARE</button>
+    <button class="rarityBanner" id="ultraRare" *ngIf="selectedItem.rarity >= ultraRareMin && selectedItem.rarity < veryRareMin" (click)="itemTapped($event)">ULTRA RARE</button>
+    <button class="rarityBanner" id="special" *ngIf="selectedItem.rarity >= specialMin && selectedItem.rarity < ultraRareMin" (click)="itemTapped($event)">SPECIAL</button>
+    <button class="rarityBanner" id="legendary" *ngIf="selectedItem.rarity >= 0.001 && selectedItem.rarity < specialMin" (click)="itemTapped($event)">LEGENDARY</button>
+    <button class="rarityBanner" id="mythical" *ngIf="selectedItem.rarity === null" (click)="itemTapped($event)">MYTHICAL</button>
 
     <div id="textContainer">
       <div id="title" >{{selectedItem.name}}</div>
