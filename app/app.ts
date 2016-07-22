@@ -1,5 +1,5 @@
 import {Component, ViewChild} from '@angular/core';
-import {ionicBootstrap, Platform, MenuController, Nav} from 'ionic-angular';
+import {ionicBootstrap, Platform, MenuController, Nav, Config} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {ListPage} from './pages/list/list';
 import {RarityChart} from './pages/rarity-chart/rarity-chart';
@@ -33,6 +33,19 @@ class MyApp {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       StatusBar.styleDefault();
+
+      var admobid = {};
+      // Init Ad Id for IOS
+      admobid = {
+          banner: 'ca-app-pub-3940256099942544/2934735716',
+          interstitial: 'ca-app-pub-3940256099942544/4411468910'
+      };
+      
+    if(AdMob) AdMob.createBanner({
+      adId: admobid.banner,
+      position: AdMob.AD_POSITION.TOP_CENTER,
+      autoShow: true });
+
     });
   }
 
