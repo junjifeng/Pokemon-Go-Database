@@ -11,6 +11,6 @@ Everyone can catch a Pidgey, but can you catch a Charizard?
 
 ## Screenshots:
 ![First](http://imgur.com/KlE7MYo.png)
-![Second](http://i.imgur.com/6fd3liK.png)
-![Third](http://i.imgur.com/h4RYpyw.png)
+![Second](http://imgur.com/6fd3liK.png)
+![Third](http://imgur.com/h4RYpyw.png)
 
