@@ -10,6 +10,6 @@ In addition, the app shows the evolution cycles for each Pokémon and explains h
 Everyone can catch a Pidgey, but can you catch a Charizard?
 
 ## Screenshots:
-<img src="http://imgur.com/938v7jC.png" style="width: 200px;"/>
-<img src="http://imgur.com/Ftdr7hw.png" style="width: 200px;"/>
-<img src="http://imgur.com/MMRjM6I.png" style="width: 200px;"/>
+<img src="http://imgur.com/938v7jC.png" style="float: right;"/>
+<img src="http://imgur.com/Ftdr7hw.png" style="float: right;"/>
+<img src="http://imgur.com/MMRjM6I.png" style="float: right;"/>
