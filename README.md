@@ -12,7 +12,6 @@ Everyone can catch a Pidgey, but can you catch a Charizard?
 ## Screenshots:
 | [![VideoBlocks](http://imgur.com/938v7jC.png)](http://videoblocks.com)  | [![AudioBlocks](http://imgur.com/Ftdr7hw.png)](http://audioblocks.com) | [![GraphicStock](http://imgur.com/MMRjM6I.png)](http://graphicstock.com) |
 |:---:|:---:|:---:|
-| http://videoblocks.com | http://audioblocks.com | http://graphicstock.com |
 
 <img src="http://imgur.com/938v7jC.png" style="float: right;"/>
 <img src="http://imgur.com/Ftdr7hw.png" style="float: right;"/>
